@@ -5,6 +5,9 @@
 - pattern matching
 - single-assignment variables
 - basic types to represent data
+- if, switch, for, while replaced with:
+	- pattern-matching
+	- higher-order functions
 
 Pattern matching uses cases
 - binding variables
