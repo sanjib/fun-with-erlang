@@ -64,3 +64,16 @@ $ erl -noshell -s module function -s init stop
 - file,write_file
 - filename,join
 - io,format
+
+## Examples
+
+"~4..0B~n"
+output of the integer 4 is "0004"
+~F.P.PadModC.
+```
+ ~F. = ~4.  (Field width of 4)
+  P. =   .  (no Precision specified)
+Pad  =  0   (Pad with zeroes)
+Mod  =      (no control sequence Modifier specified)
+  C  =  B   (Control sequence B = integer in default base 10)
+```

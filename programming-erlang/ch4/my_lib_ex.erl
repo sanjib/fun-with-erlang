@@ -33,7 +33,12 @@ month_number_to_text(10) -> 'October';
 month_number_to_text(11) -> 'November';
 month_number_to_text(12) -> 'December'.
 
+% -- Examples -- %
+% November 25, 2020 23:59:55
+% November 25, 2020 23:59:59
+% November 26, 2020 00:00:01
+% November 26, 2020 00:01:09
 my_date_string() ->
 	{Year,Month_Numeric,Day} = date(),
 	{Hours,Minutes,Seconds}  = time(),
-	io:format("~s ~w, ~w ~w:~w:~w~n", [month_number_to_text(Month_Numeric), Day, Year, Hours, Minutes, Seconds]).
+	io:format("~s ~w, ~w ~2..0B:~2..0B:~2..0B~n", [month_number_to_text(Month_Numeric), Day, Year, Hours, Minutes, Seconds]).
