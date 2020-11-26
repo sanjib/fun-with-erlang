@@ -22,6 +22,7 @@ Term is just an Erlang data structure
 ## Idioms
 
 - {point, 10, 5} is preferred to {10, 5} as the atom "point" also describes the tuple
+- always use Key => Val the first time a key is defined and use Key := Val each time the value is updated
 
 ## erl / Eshell
 
@@ -29,6 +30,8 @@ On Windows, use werl instead of erl.
 
 - c(module_name)	- compile module_name
 - cd(path)			- change directory to path
+- f().				- forget all variables
+- f(A).				- forget variable A
 - halt().			- immediate exit
 - init:stop().		- controlled shutdown
 - ls().				- list files
